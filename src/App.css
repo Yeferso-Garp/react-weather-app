@@ -1,0 +1,210 @@
+body {
+  background-image: url(https://www.latercera.com/resizer/bz-i8feuzXrp6fjduKtx2_-NIcI=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/TX7IPRNF3FALDNFO2BE5PCVYYQ.jpg);
+  
+}
+
+.change__card {
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background-image: linear-gradient(to right, rgb(26, 27, 27), rgb(211, 221, 214)); 
+  color: aliceblue;
+  height: 30px;
+  width: 300px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.change__card:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, rgb(211, 221, 214), rgb(26, 27, 27)); 
+}
+
+.handle__run {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input__search {
+  padding: 3px;
+  border-image: linear-gradient(25deg, rgb(206, 185, 185) 50%, rgb(97, 97, 148) 50%);
+  border-image-slice: 0.5;
+  background-color: rgb(220, 235, 166);
+
+}
+
+.input__search:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, rgb(211, 221, 214), rgb(46, 68, 68));  
+}
+
+.btn__Search {
+  margin: 5px;
+  padding: 3px;
+
+}
+
+.btn__Search:hover {
+  transform: scale(1.1);
+}
+
+.container__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.container__title:hover {
+  color: blue;
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, #ff5733, #ffc300);
+  border-radius: 15px;
+}
+
+
+
+.card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 430px;
+  height: 50px;
+  font-size: 30px;
+  margin: 5px;
+  border: 1px solid rgb(88, 209, 209);
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgb(115, 187, 235), rgb(144, 235, 174)); 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para el contenedor principal */
+.data__weather {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(144, 235, 174), rgb(115, 187, 235)); 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor en la página */
+
+}
+
+/* Estilos para el icono del clima */
+.icono img {
+  max-width: 80px; 
+}
+
+.icono img:hover {
+  transform: scale(1.5);
+}
+
+/* Estilos para la sección de información del clima */
+.section__card {
+  flex-grow: 1;
+  margin-left: 20px; /* Espacio entre el icono y la información */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Estilos para el título del clima */
+.section__card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la lista de información del clima */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para los elementos de la lista */
+li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los spans en los elementos de la lista */
+li span {
+  font-weight: bold;
+}
+
+.temp__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(46, 158, 185);
+  border-radius: 15px;
+  margin-top: 15px;
+  max-width: 430px;
+  height: 50px;
+  background-image: linear-gradient(to right, rgb(145, 219, 170), rgb(103, 177, 226)); 
+  color: rgb(7, 7, 7);
+  box-shadow: 4px 4px 8px rgba(27, 11, 37, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 4px 4px 5px rgba(97, 28, 7, 0.6);
+}
+
+.btn__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 30px;
+  box-shadow: -6px -6px 8px rgba(27, 11, 37, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px 5px rgba(97, 28, 7, 0.8);
+  cursor: pointer;
+  background-color: rgb(212, 238, 229);
+}
+
+.btn__button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  background-color: rgb(27, 37, 34);
+  color: wheat;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 400px) {
+  .data__weather {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icono {
+    margin-bottom: 20px;
+  }
+
+  .section__card {
+    margin-left: 0;
+    text-align: center; /* Alinea el texto al centro en dispositivos móviles */
+  }
+}
+
+
+.images__pixabay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
